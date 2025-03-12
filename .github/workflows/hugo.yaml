@@ -1,5 +1,5 @@
 # 用于构建和部署Hugo网站到GitHub Pages的示例工作流程
-name: 发布Hugo网站到Pages
+name: Deploy to Github Pages
 
 on:
   # 在目标为默认分支的推送上运行
@@ -32,7 +32,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.120.2
+      HUGO_VERSION: 0.145.0
     steps:
       - name: 安装Hugo CLI
         run: |
